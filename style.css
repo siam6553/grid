@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "advertise main-content main-content sidebar"
+      "advertise twin twin sidebar"
+      "footer footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    grid-area: header;
+    background: #4dabf7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background: #1864ab;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .advertise.left {
+    grid-area: advertise;
+    background: #fbbc04;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .advertise.right {
+    grid-area: advertise;
+    background: #fbbc04;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .main-content {
+    grid-area: main-content;
+    background: #51cf66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background: #b197fc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .twin {
+    background: #ffa94d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
